@@ -1,0 +1,33 @@
+<POLB_IN224200 ITSVersion="XML_1.0" xmlns="urn:hl7-org:v3"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
+<id root="2.16.840.1.113883.19.1122.7" extension="CNTRL-3456"/>
+<creationTime value="200202150930-0400"/>
+<!-- The version of the datatypes/RIM/vocabulary used is that of May 2006 -->
+<versionCode code="2006-05"/>
+<!-- interaction id= Observation Event Complete, w/o Receiver Responsibilities -->
+<interactionId root="2.16.840.1.113883.1.6" extension="POLB_IN224200"/>
+<processingCode code="P"/>
+<processingModeCode nullFlavor="OTH"/>
+<acceptAckCode code="ER"/>
+<receiver typeCode="RCV">
+ <device classCode="DEV" determinerCode="INSTANCE">
+   <id extension="GHH LAB" root="2.16.840.1.113883.19.1122.1"/>
+   <asLocatedEntity classCode="LOCE">
+     <location classCode="PLC" determinerCode="INSTANCE">
+       <id root="2.16.840.1.113883.19.1122.2" extension="ELAB-3"/>
+     </location>
+   </asLocatedEntity>
+ </device>
+</receiver>
+<sender typeCode="SND">
+ <device classCode="DEV" determinerCode="INSTANCE">
+   <id root="2.16.840.1.113883.19.1122.1" extension="GHH OE"/>
+   <asLocatedEntity classCode="LOCE">
+     <location classCode="PLC" determinerCode="INSTANCE">
+       <id root="2.16.840.1.113883.19.1122.2" extension="BLDG24"/>
+     </location>
+   </asLocatedEntity>
+ </device>
+</sender>
+<! –- Trigger Event Control Act & Domain Content -- >
+</POLB_IN224200>
